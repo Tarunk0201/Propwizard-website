@@ -1,0 +1,41 @@
+.work-together-btn {
+  position: relative;
+  overflow: hidden;
+  transition: color 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.work-together-btn .btn-text,
+.work-together-btn .btn-icon-wrapper {
+  position: relative;
+  z-index: 2;
+  transition: color 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.work-together-btn .btn-icon-wrapper img {
+  transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.work-together-btn:hover .btn-icon-wrapper img {
+  transform: rotate(360deg);
+}
+
+.work-together-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10%;
+  width: 0;
+  height: 100%;
+  background-color: black;
+  z-index: 1;
+  transition: width 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+  transform: skewX(-25deg);
+}
+
+.work-together-btn:hover {
+  color: white;
+}
+
+.work-together-btn:hover::before {
+  width: 130%;
+}
