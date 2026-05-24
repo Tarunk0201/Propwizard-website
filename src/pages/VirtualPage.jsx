@@ -4,7 +4,7 @@ import virtualhero from "../assets/virtualhero.png";
 import virtualhero1 from "../assets/virtualhero1.png";
 import virtualhero2 from "../assets/virtualhero2.png";
 import spaces from "../assets/spaces.png";
-import sale from "../assets/sale.png";
+import sale from "../assets/Sale.png";
 import tour from "../assets/tour.png";
 import web from "../assets/web.png";
 import scan from "../assets/scan.jpeg";
